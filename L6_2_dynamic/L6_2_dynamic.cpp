@@ -54,4 +54,9 @@ int main() {
         }
         cout << endl;
     }
+    // Освобождение выделенной памяти
+    for (int i = 0; i < n; i++) {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
 }
